@@ -1,6 +1,7 @@
 import './App.css';
 import { Statistic, Row, Col } from 'antd';
 import 'antd/dist/antd.css';
+import React from 'react';
 
 function App() {
   let n = 5;
