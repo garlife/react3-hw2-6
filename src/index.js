@@ -1,21 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'antd/dist/antd.css';
 import './index.css';
-import { Statistic, Col, Row } from 'antd';
-
-let n = 5;
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <div style={{ marginLeft: 16, marginRight: 10 }}>
-    <Row>
-      <Col>
-        <Statistic title="Константа n" value={n} />
-      </Col>
-      <Col style={{ marginLeft: 16 }}>
-        <Statistic title="Сумма натуральных чисел" value={(n * (n + 1)) / 2} />
-      </Col>
-    </Row>
-  </div>,
-  document.getElementById('container')
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
 );
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
